@@ -1,4 +1,4 @@
-const errorHandler = (err, req, res, next) => {
+const authHandler = (err, req, res, next) => {
   console.error(err);
 
   const statusCode = err.statusCode || 500;
@@ -9,4 +9,4 @@ const errorHandler = (err, req, res, next) => {
   });
 };
 
-module.exports = errorHandler;
+module.exports = authHandler;
